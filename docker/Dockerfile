@@ -2,8 +2,8 @@ FROM php:8-apache
 
 USER root
 
-ARG project=allztech-web
-ARG user=allztech-web
+ARG project=adoteumgatinho-web
+ARG user=adoteumgatinho-web
 ARG uid=1000
 
 RUN apt-get update && apt-get install -y \
@@ -33,6 +33,8 @@ COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 RUN curl -sL https://deb.nodesource.com/setup_20.x -o nodesource_setup.sh && bash nodesource_setup.sh && apt-get -y --force-yes install nodejs
 
 RUN apt-get upgrade -y && npm update -g
+
+RUN yarn global add @vue/cli
 
 RUN echo "ServerName laravel-app.local" >> /etc/apache2/apache2.conf
 COPY ports.conf /etc/apache2/ports.conf

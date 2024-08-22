@@ -1,14 +1,14 @@
-version: '3.3'
+version: '3.7'
 
 services:
   app:
     build:
       context: ./docker
       dockerfile: Dockerfile
-    image: php:8-apache-allztechweb
     container_name: allztech-web
     volumes:
-      - ./src:/allztech-web
+      - .:/app
+    working_dir: /app
     ports:
       - 8081:8081
     environment:
