@@ -1,25 +1,25 @@
 <template>
   <div>
-    <NavComponent></NavComponent>
-    <BunnerHeaderHomeComponent></BunnerHeaderHomeComponent>
-    <PartnersComponent></PartnersComponent>
+    <Header></Header>
+    <Content></Content>
+    <Footer></Footer>
 
   </div>
 </template>
 
 <script>
-import BunnerHeaderHomeComponent from './components/BunnerHeaderHomeComponent.vue'
-import NavComponent from './components/NavComponent.vue'
-import PartnersComponent from './components/PartnersComponent.vue'
+  import Content from '@/components/layouts/Content.vue'
+  import Footer from '@/components/layouts/Footer.vue'
+  import Header from '@/components/layouts/Header.vue'
 
-export default {
-  name: 'App',
-  components: {
-    BunnerHeaderHomeComponent,
-    NavComponent,
-    PartnersComponent
+  export default {
+    name: 'App',
+    components: {
+      Content,
+      Footer,
+      Header
+    }
   }
-}
 </script>
 
 <style>
