@@ -1,13 +1,26 @@
 <template>
   <div>
+    <div class="container">
+      <div id="allz" class="row d-flex justify-content-center">
+        <div class="col">
+          <div class="h-100 p-5">
+            <h1 class="text-center">Soluções digitais <span>escaláveis e flexíveis</span></h1>
+            <p class="text-center">Nossas soluções crescem com seu negócio, adaptando-se às demandas em constante evolução do mercado.</p>
+            <button class="btn btn-outline-light btn-sm mx-2" type="button">Começar Projeto</button>
+            <img src="../../assets/img/telas.png" alt="ALLZ" class="d-inline-block align-text-top">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="linear-gradiente">&nbsp;</div>
     <BunnerHeaderHomeComponent></BunnerHeaderHomeComponent>
     <PartnersComponent></PartnersComponent>
   </div>
 </template>
 
 <script>
-  import BunnerHeaderHomeComponent from '@/components/BunnerHeaderHomeComponent.vue'
-  import PartnersComponent from '@/components/PartnersComponent.vue'
+  import BunnerHeaderHomeComponent from '@/components/comuns/BunnerHeaderHomeComponent.vue'
+  import PartnersComponent from '@/components/comuns/PartnersComponent.vue'
 
   export default {
     name: 'Inicio',

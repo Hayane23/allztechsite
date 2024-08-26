@@ -1,10 +1,19 @@
 <template>
     <div>
-        <p>Conteúdo</p>
-        <inicio></inicio>
+
+        <button @click="atualizarComponent()">Atualizar</button>
+        <button @click="conteudo = 'Inicio'">Inicio</button>
+        <button @click="conteudo = 'quem-somos'">Quem Somos</button>
+        <button @click="conteudo = 'produtos'">Produtos</button>
+        <button @click="conteudo = 'fale-conosco'">Fale conosco</button>
+        
+
+        <!-- <inicio></inicio>
         <quem-somos></quem-somos>
         <produtos></produtos>
-        <fale-conosco></fale-conosco>
+        <fale-conosco></fale-conosco> -->
+
+        <component :is="conteudo"></component>
     </div>
 </template>
 
@@ -21,7 +30,11 @@
             QuemSomos,
             Produtos,
             FaleConosco
-        }
+        },
+        data: () => ({
+            titulo: 'Componente Conteudo',
+            conteudo: Inicio
+        })
     }
 </script>
 

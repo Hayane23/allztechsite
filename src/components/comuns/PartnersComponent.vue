@@ -1,10 +1,13 @@
 <template>
     <div class="d-flex justify-content-center">
-        <img src="../assets/img/logoparceiros.png" class="d-inline-block align-text-top">
+        <img src="../../assets/img/logoparceiros.png" class="d-inline-block align-text-top">
     </div>
 </template>
 
 <script>
+    export default {
+        name:'parceiros'
+    }
 
 </script>
 
