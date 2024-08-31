@@ -13,19 +13,19 @@
       </div>
     </div>
     <div id="linear-gradiente">&nbsp;</div>
-    <BunnerHeaderHomeComponent></BunnerHeaderHomeComponent>
+    <BunnerBlueLogoComponent></BunnerBlueLogoComponent>
     <PartnersComponent></PartnersComponent>
   </div>
 </template>
 
 <script>
-  import BunnerHeaderHomeComponent from '@/components/comuns/BunnerHeaderHomeComponent.vue'
+  import BunnerBlueLogoComponent from '@/components/comuns/BunnerBlueLogoComponent.vue'
   import PartnersComponent from '@/components/comuns/PartnersComponent.vue'
 
   export default {
     name: 'Inicio',
     components: {
-      BunnerHeaderHomeComponent,
+      BunnerBlueLogoComponent,
       PartnersComponent
     }
   }
