@@ -1,11 +1,13 @@
 <template>
   <div>
-    <p>content</p>
+    <p>Quem Somos</p>
   </div>
 </template>
 
 <script>
-
+  export default{
+    name: 'QuemSomos'
+  }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
